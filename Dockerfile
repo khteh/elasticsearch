@@ -29,5 +29,5 @@ ADD iconverse /opt/iconverse
 #RUN chmod +x /usr/local/bin/start-elasticsearch-head.sh /usr/local/bin/run.sh
 RUN chmod +x /usr/local/bin/run.sh
 ENTRYPOINT ["run.sh"]
-EXPOSE 9100 9200 9300
+EXPOSE 9200
 CMD ["bash"]
