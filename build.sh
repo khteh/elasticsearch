@@ -1,3 +1,3 @@
 #!/bin/bash
-docker build -t khteh/iconverse:elasticsearch .
-docker push khteh/iconverse:elasticsearch
+docker build -t taigersg/iconverse:elasticsearch .
+docker push taigersg/iconverse:elasticsearch
