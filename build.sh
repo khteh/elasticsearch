@@ -1,3 +1,4 @@
 #!/bin/bash
-docker build -t taigersg/iconverse:elasticsearch .
-docker push taigersg/iconverse:elasticsearch
+docker build -t elasticsearch .
+docker tag elasticsearch:latest 701969852130.dkr.ecr.ap-southeast-1.amazonaws.com/elasticsearch:latest
+docker push 701969852130.dkr.ecr.ap-southeast-1.amazonaws.com/elasticsearch:latest
