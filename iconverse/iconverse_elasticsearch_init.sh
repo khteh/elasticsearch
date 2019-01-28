@@ -40,6 +40,12 @@
     /opt/iconverse/elasticsearch_systems_init.sh
     echo "Done"
     echo
+
+    # fluentd
+    echo "Initializing fluentd index . . . . "
+    /opt/iconverse/elasticsearch_fluentd_init.sh
+    echo "Done"
+    echo
 #else
 #    echo "Cancelled elasticsearch initialization . . . ."
 #fi
