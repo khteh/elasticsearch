@@ -1,5 +1,5 @@
 FROM ubuntu:18.10
-MAINTAINER Kok How, Teh <kokhow.teh@taiger.com>
+MAINTAINER Kok How, Teh <funcoolgeek@gmail.com>
 RUN apt update -y
 RUN apt upgrade -y
 RUN apt install -y git wget sudo python curl apt-transport-https gnupg libasound2
