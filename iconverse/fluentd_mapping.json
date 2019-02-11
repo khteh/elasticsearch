@@ -68,12 +68,10 @@
           }
         },
         "location_array": {
-          "type": "geo_point",
-          "geohash": true
+          "type": "geo_point"
         },
         "location_properties": {
           "type": "geo_point",
-          "geohash": true,
           "properties": {
             "lat": {
               "type": "float"
@@ -84,8 +82,7 @@
           }
         },
         "location_string": {
-          "type": "geo_point",
-          "geohash": true
+          "type": "geo_point"
         },
         "message": {
           "type": "text",
