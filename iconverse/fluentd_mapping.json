@@ -71,15 +71,7 @@
           "type": "geo_point"
         },
         "location_properties": {
-          "type": "geo_point",
-          "properties": {
-            "lat": {
-              "type": "float"
-            },
-            "lon": {
-              "type": "float"
-            }
-          }
+          "type": "geo_point"
         },
         "location_string": {
           "type": "geo_point"

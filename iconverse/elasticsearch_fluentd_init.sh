@@ -6,4 +6,6 @@ echo
 curl -XPUT http://$host/fluentd --retry-connrefused --retry 10
 echo
 curl -XPUT -H "Content-Type: application/json" --data @fluentd_mapping.json http://$host/fluentd/fluentd/_mapping --retry-connrefused --retry 10
+#echo
+#curl -XPUT -H "Content-Type: application/json" --data @fluentd_index_pattern.json http://$host/_template/fluentd --retry-connrefused --retry 10
 echo
