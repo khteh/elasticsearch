@@ -16,8 +16,8 @@ RUN update-alternatives --set javac /usr/lib/jvm/jdk-11.0.2/bin/javac
 #RUN echo "deb https://artifacts.elastic.co/packages/6.x/apt stable main" | tee -a /etc/apt/sources.list.d/elastic-6.x.list
 #RUN apt update -y
 #RUN apt install -y elasticsearch
-RUN wget -q https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.5.4.deb -P /tmp
-RUN dpkg -i /tmp/elasticsearch-6.5.4.deb
+RUN wget -q https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.6.0.deb -P /tmp
+RUN dpkg -i /tmp/elasticsearch-6.6.0.deb
 #RUN cd /usr/src && git clone git://github.com/mobz/elasticsearch-head.git
 #RUN npm install -g npm@latest && npm cache verify
 #RUN cd /usr/src/elasticsearch-head && npm install
@@ -32,5 +32,5 @@ ADD iconverse /opt/iconverse
 RUN chmod +x /usr/local/bin/run.sh
 RUN rm -rf /tmp/*
 ENTRYPOINT ["run.sh"]
-EXPOSE 9200
+EXPOSE 9200 9300
 CMD ["bash"]
