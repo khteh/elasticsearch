@@ -1,2 +1,2 @@
 # elasticsearch
-Elasticsearch container Dockerfile
+Elasticsearch container running on Kubernetes
