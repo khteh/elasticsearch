@@ -1,4 +1,4 @@
-FROM elasticsearch:8.5.2
+FROM elasticsearch:8.5.3
 ADD limits.conf /etc/security/limits.conf
 ADD elasticsearch_systemd.conf /etc/systemd/system/elasticsearch.service.d/override.conf
 ADD entrypoint.sh /usr/local/bin/entrypoint.sh
